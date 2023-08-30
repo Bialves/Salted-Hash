@@ -21,7 +21,7 @@ public class EncryptPassword {
 
         // Gera um salt aleatório
         byte[] salt = generateSalt();
-        System.out.println("SALT: " + salt);
+        System.out.println("SALT: " + byteToString(salt));
 
         digest.reset();
         // Agrega o salt a senha criptografada
